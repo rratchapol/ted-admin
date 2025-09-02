@@ -15,7 +15,8 @@ import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, D
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
 import { Switch } from "@/components/ui/switch";
-import { Plus, Search, Edit, Trash2, Upload, Eye, BarChart, Image as ImageIcon, GripVertical } from "lucide-react";
+import { Plus, Search, Edit, Trash2, Eye, BarChart, Image as ImageIcon, GripVertical } from "lucide-react";
+import Image from "next/image";
 
 interface Banner {
   id: number;
@@ -261,11 +262,13 @@ export default function BannersPage() {
                           </div>
                         </TableCell>
                         <TableCell>
-                          <div className="w-16 h-10 bg-muted rounded overflow-hidden">
-                            <img
+                          <div className="w-16 h-10 bg-muted rounded overflow-hidden relative">
+                            <Image
                               src={banner.imageUrl}
                               alt={banner.title}
-                              className="w-full h-full object-cover"
+                              fill
+                              sizes="64px"
+                              className="object-cover"
                             />
                           </div>
                         </TableCell>

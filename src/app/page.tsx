@@ -129,7 +129,7 @@ export default function AdminDashboard() {
                     <div className="flex items-center gap-3">
                       <div className="h-2 w-2 bg-primary rounded-full" />
                       <div className="flex-1">
-                        <p className="text-sm font-medium">เพิ่มบทความใหม่: "ข่าวประชาสัมพันธ์"</p>
+                        <p className="text-sm font-medium">เพิ่มบทความใหม่: &quot;ข่าวประชาสัมพันธ์&quot;</p>
                         <p className="text-xs text-muted-foreground">5 นาทีที่แล้ว</p>
                       </div>
                     </div>

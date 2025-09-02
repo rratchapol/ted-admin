@@ -41,7 +41,7 @@ interface HomepageSection {
   id: number;
   name: string;
   type: "hero" | "news" | "events" | "gallery" | "links";
-  content: any;
+  content: Record<string, unknown>;
   order: number;
   visible: boolean;
 }
